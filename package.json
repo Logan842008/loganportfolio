@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
+  },
+  "dependencies": {
+    "swiper": "^11.1.0"
+  }
+}

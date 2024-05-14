@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Logan's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/styles/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body
+    class="dark:bg-neutral-800 bg-neutral-200 text-neutral-900 dark:text-neutral-100 font-[Poppins] min-h-[100vh] overflow-x-hidden w-[100vw]"
+  >
+  <nav
+      class="fixed w-[100%] top-0 right-0 z-[1000] flex align-middle justify-between bg-transparent backdrop-blur-sm xl:px-[12%] py-[28px] transition-all duration-[0.5s] ease-linear px-[5%]"
+    >
+      <a href="#home" class="logo flex align-middle"
+        ><i
+          class="ri-code-fill bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text text-3xl me-3 "
+        ></i
+        ><span class="mt-[2px] font-extrabold text-2xl">Logan</span>
+      </a>
+      <ul
+        class="navbar max-lg:hidden transition duration-[0.1s] ease-linear max-lg:flex-col max-lg:gap-y-6 max-lg:absolute flex mt-2 max-lg:top-[100px] max-lg:p-10 max-lg:right-[-100%] max-lg:justify-items-start max-lg:dark:bg-neutral-900 max-lg:bg-neutral-300 max-lg:rounded-md"
+      >
+        <li>
+          <a
+            href="#home"
+            class="hover:text-red-500 transition-all duration-[0.5s] px-0 me-[50px] lg:me-[30px] text-base "
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-red-500 transition-all duration-[0.5s] px-0 py-[5px] me-[50px] lg:me-[30px] text-base hover:translate-y-6"
+            href="#about"
+            >ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-red-500 transition-all duration-[0.5s] px-0 py-[5px] me-[50px] lg:me-[30px] text-base hover:translate-y-6"
+            href="#hobbies"
+            >HOBBIES</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-red-500 transition-all duration-[0.5s] px-0 py-[5px] me-[50px] lg:me-[30px] text-base hover:translate-y-6"
+            href="#projects"
+            >PROJECTS</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-red-500 transition-all duration-[0.5s] px-0 py-[5px] me-[50px] lg:me-[30px] text-base hover:translate-y-6"
+            href="#skills"
+            >SKILLS</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-red-500 transition-all duration-[0.5s] px-0 py-[5px] me-[50px] lg:me-[30px] text-base hover:translate-y-6"
+            href="#education"
+            >EDUCATION</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-red-500 transition-all duration-[0.5s] px-0 py-[5px] me-[50px] lg:me-[30px] text-base hover:translate-y-6"
+            href="#achievements"
+            >ACHIEVEMENT</a
+          >
+        </li>
+      </ul>
+      <div
+        class="main flex align-middle lg:hidden transition duration-[0.5s] cursor-pointer"
+      >
+        <i class="ri-menu-line text-2xl" id="menu-icon"></i>
+      </div>
+    </nav>
+    <header id="home" class="min-h-[100vh] max-md:pl-[45px] flex max-lg:justify-center justify-between align-middle font-bold w-[100vw] xl:px-[12%] px-[5%] transition-all duration-[0.5s] ease-linear " >
+      <div class="grid flex-wrap grid-cols-3 justify-center items-center">
+        <div class=" lg:col-span-2 lg:order-1 max-lg:order-2 max-lg:col-span-3 flex flex-col justify-center max-lg:text-center lg:text-left mt-5">
+          <h1 class="text-5xl ">Hi, I'm <span>
+            <div class="left-0 name relative flex justify-left items-center max-lg:text-center text-left py-10">
+              <div class="absolute h-[15px] max-lg:w-[100%] lg:w-[570px] xl:w-[590px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-2xl ">
+              </div>
+              <h1 class="md:text-7xl max-md:text-6xl relative bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text">
+                LOGAN KANNAN
+              </h1>
+              </div>
+          </span></h1>
+          <br>
+          <div class="container text-5xl flex py-5 text-left md:block max-md:hidden">
+            <span class="text first-text relative">I'm a <span class="text sec-text relative before:content-[''] before:absolute before:top-0 before:left-0 before:h-[100%] before:w-[100%] before:dark:bg-neutral-800 before:bg-neutral-200 before:border-l-red-500 before:border-l-2 before:animate-typing">Coder.</span></span>
+            
+          </div>
+          <p class="max-lg:text-center text-left">Hello there, I am a 16 year old coder who has been fascinated with technology since the age of 4. It is like we have a special connection :). Thus, my goal in life is to make a product that can change everyone's life with the same technology that made me feel special.</p>
+        </div>
+        <div class="flex flex-col justify-center items-center image lg:col-span-1 max-lg:col-span-3 lg:order-2 max-lg:order-1 w-[100%] h-[100%]">
+          <img class="w-[100%]" src="src/assets/Untitled design.png" alt="">
+        </div>
+      </div>
+      
+      </div>
+    </header>
+    <main>
+      <section class="min-h-[100vh] flex flex-col justify-center items-center text-3xl font-bold relative" id="about">
+        <span>
+            <div class="left-0 name relative flex justify-center items-center text-center py-10">
+              <div class="absolute h-[15px] max-lg:w-[100%] lg:w-[570px] xl:w-[590px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-2xl ">
+              </div>
+              <h1 class="md:text-7xl max-md:text-5xl relative bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text">
+                ABOUT ME
+
+              </h1>
+              </div>
+        </span>
+        <div class="flex justify-around  w-[100%] xl:px-[12%] px-[5%] py-5">
+          <div class="grid grid-cols-3 gap-x-10 gap-y-5 w-[100%]">
+            <div class="md:col-span-1 max-md:col-span-0 border-[10px] border-red-500 bg-omg bg-cover bg-center rounded-lg max-md:hidden"></div>
+            <div class="md:col-span-2 max-md:col-span-3">
+              <div class="grid max-md:pl-[25px] grid-cols-2 gap-x-10 gap-y-10 size-[100%] text-center justify-around text-2xl max-lg:text-[20px]">
+            <div class="group overflow-hidden relative lg:col-span-1 max-lg:col-span-2 border-[5px] w-[100%] p-10 dark:border-neutral-300 border-neutral-800 hover:border-b-[15px] hover:border-orange-500 rounded-lg transition-all duration-[0.5s]">
+              
+              <h1 class="absolute top-[200%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[50%] transition-all duration-[0.5s]">16</h1>
+              <h1 class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[-100%] text-red-500 transition-all duration-[0.5s]">Age</h1>
+            </div>
+            <div class="group overflow-hidden relative lg:col-span-1 max-lg:col-span-2 border-[5px] w-[100%] p-10 dark:border-neutral-300 border-neutral-800 hover:border-b-[15px] hover:border-orange-500 rounded-lg transition-all duration-[0.5s]">
+              <h1 class="absolute top-[200%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[50%] transition-all duration-[0.5s]">Indian</h1>
+              <h1 class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[-100%] text-red-500 transition-all duration-[0.5s]">Race</h1>
+            </div>
+            <div class="group overflow-hidden relative lg:col-span-2 max-lg:col-span-2 border-[5px] w-[100%] p-10 dark:border-neutral-300 border-neutral-800 hover:border-b-[15px] hover:border-orange-500 rounded-lg transition-all duration-[0.5s]">
+              
+              <h1 class="absolute top-[200%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[50%] transition-all duration-[0.5s]">8th April 2008</h1>
+              <h1 class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[-100%] text-red-500 transition-all duration-[0.5s]">Birth Date</h1>
+            </div>
+            <div class="group overflow-hidden relative lg:col-span-1 max-lg:col-span-2 border-[5px] w-[100%] p-10 dark:border-neutral-300 border-neutral-800 hover:border-b-[15px] hover:border-orange-500 rounded-lg transition-all duration-[0.5s]">
+              
+              <h1 class="absolute top-[200%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[50%] transition-all duration-[0.5s]">Ipoh, Perak</h1>
+              <h1 class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[-100%] text-red-500 transition-all duration-[0.5s]">Birth Place</h1>
+            </div>
+            <div class="group overflow-hidden relative lg:col-span-1 max-lg:col-span-2 border-[5px] w-[100%] p-10 dark:border-neutral-300 border-neutral-800 hover:border-b-[15px] hover:border-orange-500 rounded-lg transition-all duration-[0.5s]">
+              
+              <h1 class="absolute top-[200%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[50%] transition-all duration-[0.5s]">Entrepreneur</h1>
+              <h1 class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[-100%] text-red-500 transition-all duration-[0.5s]">Ambition</h1>
+            </div>
+            <div class="group overflow-hidden relative lg:col-span-2 max-lg:col-span-2 border-[5px] w-[100%] py-10 px-3 dark:border-neutral-300 border-neutral-800 hover:border-b-[15px] hover:border-orange-500 rounded-lg transition-all duration-[0.5s]">
+              
+              <h1 class="absolute top-[200%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[50%] transition-all duration-[0.5s]">MIT, Massachusetts</h1>
+              <h1 class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:top-[-100%] text-red-500 transition-all duration-[0.5s]">Dream University</h1>
+            </div>
+            
+        </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="min-h-[100vh] flex flex-col justify-center items-center text-3xl font-bold relative lg:px-[12%] max-lg:px" id="hobbies">
+        <span>
+          <div class="left-0 name relative flex justify-center items-center text-center py-10">
+            <div class="absolute h-[15px] max-lg:w-[100%] lg:w-[570px] xl:w-[590px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-2xl ">
+            </div>
+            <h1 class="md:text-7xl max-md:text-5xl relative bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text">
+              MY HOBBIES
+
+            </h1>
+            </div>
+      </span>
+      <div class="con">
+        <div class="slider">
+          <div class="slides" style="background: url(src/assets/1.jpg); background-size: cover; background-position: center;">
+            <div class="box">
+              <div class="content text-white">
+                <h2>Valorant</h2>
+                <p>Playing Valorant with my friends is the best experience I could ever have as I see my friends raging as they die.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slides" style="background: url(src/assets/2.webp); background-size: cover;  background-position: center;">
+            <div class="box">
+              <div class="content text-white">
+                <h2>Minecraft</h2>
+                <p>This game allows me to unleash my creativity and I can also learn how to survive from this game, well, except for the dangerous mobs of course :)</p>
+              </div>
+            </div>
+          </div>
+          <div class="slides" style="background: url(src/assets/3.avif); background-size: cover;  background-position: center;">
+            <div class="box">
+              <div class="content text-white">
+                <h2>Badminton</h2>
+                <p>This is one of my favorite hobbies as I think that this is a more fun and challenging way to exercise and relax my muscles.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slides" style="background: url(src/assets/4.webp); background-size: cover;  background-position: center;">
+            <div class="box">
+              <div class="content text-white">
+                <h2>Chess</h2>
+                <p>This strategically advanced game allows me to relax my brain and at the same time allows me to give tension to my brain :(</p>
+              </div>
+            </div>
+          </div>
+          <div class="slides" style="background: url(src/assets/5.png); background-size: cover;  background-position: center;">
+            <div class="box">
+              <div class="content text-white">
+                <h2 >Watch Movies</h2>
+                <p>When I don't have the mood to play games, the movies help me to relax my mind without moving a single muscle.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slides" style="background: url(src/assets/6.jpg); background-size: cover;  background-position: center;">
+            <div class="box">
+              <div class="content text-white">
+                <h2 >Car Games</h2>
+                <p>These types of games are the ones that kept me patient all this time to drive a car; if not, I would steal my parents cars and drive them :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <span class="prev"></span>
+          <span class="next"></span>
+        </div>
+      </div>
+      </section>
+      <section class="min-h-[100vh] flex flex-col justify-center items-center text-3xl font-bold" id="projects">
+        <span>
+          <div class="left-0 name relative flex justify-center items-center text-center py-10">
+            <div class="absolute h-[15px] max-lg:w-[100%] lg:w-[570px] xl:w-[700px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-2xl ">
+            </div>
+            <h1 class="md:text-7xl max-md:text-5xl relative bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text">
+              PROJECTS OVERVIEW
+            </h1>
+            </div>
+      </span>
+      <div class="grid grid-cols-4 flex-wrap max-md:gap-x-0 md:gap-x-10 gap-y-10">
+        <div class="lg:col-span-1 max-md:pl-[25px] card max-lg:col-span-4 relative w-[320px] h-[400px] flex flex-col justify-between">
+          <div class="imgBx relative w-[100%] h-[240px] bg-[#f00] rounded-[15px] rounded-br-[0]" style="background: url(src/assets/11.png); background-position: center; background-size: cover;"></div>
+          <div class="content1 relative w-[100%] h-[200px] bg-neutral-100 dark:bg-neutral-900 rounded-[15px] rounded-tl-[0] rounded-tr-[0] flex justify-left items-center">
+            <span class="title-card absolute top-[-80px] h-[80px] w-[50%] bg-neutral-100 dark:bg-neutral-900 border-t-[10px] border-r-[10px] dark:border-t-neutral-800 border-t-neutral-300 dark:border-r-neutral-800 border-t-neautral-200 rounded-tr-[25px] flex justify-center items-center"><a class="relative dark:bg-white bg-black px-[15px] py-[10px] m-[15px] block rounded-[7px] text-white text-xl dark:text-black text-[600] decoration-0" href="">Database</a></span>
+            <p class="text-lg my-2 mx-5 text-justify font-normal">This is a database projcet that I made using Firebase to connect to an app.</p>
+          </div>
+        </div>
+        <div class="col-span-1 max-md:pl-[25px] card max-lg:col-span-4 relative w-[320px] h-[400px] flex flex-col justify-between">
+          <div class="imgBx relative w-[100%] h-[240px] bg-[#f00] rounded-[15px] bg-center rounded-br-[0]" style="background: url(src/assets/12.png); background-size: cover; background-position: center;"></div>
+          <div class="content1 relative w-[100%] h-[200px] bg-neutral-100 dark:bg-neutral-900 rounded-[15px] rounded-tl-[0] rounded-tr-[0] flex justify-left items-center">
+            <span class="title-card absolute top-[-80px] h-[80px] w-[50%] bg-neutral-100 dark:bg-neutral-900 border-t-[10px] border-r-[10px] dark:border-t-neutral-800 border-t-neutral-300 dark:border-r-neutral-800 border-t-neautral-200 rounded-tr-[25px] flex justify-center items-center"><a class="relative dark:bg-white bg-black py-[10px] px-[45px] m-[15px] block rounded-[7px] text-white text-xl dark:text-black text-[600] decoration-0" href="">App</a></span>
+            <p class="text-lg my-2 mx-5 text-justify font-normal">This app is used to monitor the plant's conditions with the help of the database.</p>
+          </div>
+        </div>
+        <div class="col-span-1 max-md:pl-[25px] card max-lg:col-span-4 relative w-[320px] h-[400px] flex flex-col justify-between">
+          <div class="imgBx relative w-[100%] h-[240px] bg-[#f00] rounded-[15px]  rounded-br-[0]" style="background: url(src/assets/13.png); background-size: cover; background-position: center;"></div>
+          <div class="content1 relative w-[100%] h-[200px] bg-neutral-100 dark:bg-neutral-900 rounded-[15px] rounded-tl-[0] rounded-tr-[0] flex justify-left items-center">
+            <span class="title-card absolute top-[-80px] h-[80px] w-[50%] bg-neutral-100 dark:bg-neutral-900 border-t-[10px] border-r-[10px] dark:border-t-neutral-800 border-t-neutral-300 dark:border-r-neutral-800 border-t-neautral-200 rounded-tr-[25px] flex justify-center items-center"><a class="relative dark:bg-white bg-black py-[10px] px-[25px] m-[15px] block rounded-[7px] text-white text-xl dark:text-black text-[600] decoration-0" href="https://epchub.netlify.app/">Website</a></span>
+            <p class="text-lg my-2 mx-5 text-justify font-normal">This website was made using HTML, CSS & JAVASCRIPT and it is a pc builder website.</p>
+          </div>
+        </div>
+        <div class="col-span-1 max-md:pl-[25px] card max-lg:col-span-4 relative w-[320px] h-[400px] flex flex-col justify-between">
+          <div class="imgBx relative w-[100%] h-[240px] bg-[#f00] rounded-[15px]  rounded-br-[0]" style="background: url(src/assets/14.jpg); background-size: cover; background-position: center;"></div>
+          <div class="content1 relative w-[100%] h-[200px] bg-neutral-100 dark:bg-neutral-900 rounded-[15px] rounded-tl-[0] rounded-tr-[0] flex justify-left items-center">
+            <span class="title-card absolute top-[-80px] h-[80px] w-[50%] bg-neutral-100 dark:bg-neutral-900 border-t-[10px] border-r-[10px] dark:border-t-neutral-800 border-t-neutral-300 dark:border-r-neutral-800 border-t-neautral-200 rounded-tr-[25px] flex justify-center items-center"><a class="relative dark:bg-white bg-black py-[10px] px-[24px] m-[15px] block rounded-[7px] text-white text-xl dark:text-black text-[600] decoration-0" href="">Projects</a></span>
+            <p class="text-lg my-2 mx-5 text-justify font-normal">I have also made realtime projects and have presented them in fairs such as this one.</p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="min-h-[100vh] flex flex-col justify-center items-center text-3xl font-bold" id="skills">
+        <span>
+          <div class="left-0 name relative flex justify-center items-center text-center py-10">
+            <div class="absolute h-[15px] max-lg:w-[100%] lg:w-[570px] xl:w-[590px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-2xl ">
+            </div>
+            <h1 class="md:text-7xl max-md:text-5xl relative bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text">
+              MY SKILLS
+
+            </h1>
+            </div>
+      </span>
+      <div class="con-skills relative grid grid-cols-3 justify-center items-center flex-wrap gap-y-[100px] gap-x-0 md:gap-x-[50px] pb-[100px] pt-[50px] pl-[25px] md:px-[50px]">
+        <div class="card group lg:col-span-1 max-lg:col-span-3 relative max-md:w-[300px] md:w-[350px] h-[300px] bg-neutral-100 dark:bg-neutral-900 rounded-[20px] hover:h-[350px] transition-all duration-[0.5s] flex justify-center items-start">
+          <div class="imgBx absolute top-[20px] max-md:w-[250px] md:w-[300px] h-[220px] bg-gradient-to-tl from-orange-500 to-orange-300 rounded-[12px] transition-all duration-[0.5s] group-hover:top-[-100px] group-hover:scale-75 flex justify-center items-center">
+            <i class="fa-brands fa-html5 text-white text-9xl"></i>
+          </div>
+          <div class="content1 absolute w-[100%] py-0 px-[30px] text-center h-[35px] overflow-hidden top-[252px] group-hover:top-[130px] group-hover:h-[250px] transition-all duration-[0.5s]">
+            <h2 class="text-orange-500 text-4xl text-[700]">HTML</h2>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-all duration-50">HTML is the main language that I use to code my websites so far. It basically helps to create a layout or a markup that allows me to add my content in the website in a organised manner which is very helpful.</p>
+          </div>
+        </div>
+        <div class="card group lg:col-span-1 max-lg:col-span-3 relative max-md:w-[300px] md:w-[350px] h-[300px] bg-neutral-100 dark:bg-neutral-900 rounded-[20px] hover:h-[350px] transition-all duration-[0.5s] flex justify-center items-start">
+          <div class="imgBx absolute top-[20px] max-md:w-[250px] md:w-[300px] h-[220px] bg-gradient-to-t from-cyan-500 to-cyan-200 rounded-[12px] transition-all duration-[0.5s] group-hover:top-[-100px] group-hover:scale-75 flex justify-center items-center">
+            <i class="fa-brands fa-css3-alt text-white text-9xl"></i>
+          </div>
+          <div class="content1 absolute w-[100%] py-0 px-[30px] text-center h-[35px] overflow-hidden top-[252px] group-hover:top-[130px] group-hover:h-[250px] transition-all duration-[0.5s]">
+            <h2 class="text-cyan-400 text-4xl text-[700]">CSS</h2>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-all duration-50">CSS is my main styling language that I use to compliment HTML when coding the frontend part of my websites. CSS allows me to target specific elements and customize it such as animations transitions and so on.</p>
+          </div>
+        </div>
+        <div class="card group lg:col-span-1 max-lg:col-span-3 relative max-md:w-[300px] md:w-[350px] h-[300px] bg-neutral-100 dark:bg-neutral-900 rounded-[20px] hover:h-[350px] transition-all duration-[0.5s] flex justify-center items-start">
+          <div class="imgBx absolute top-[20px] max-md:w-[250px] md:w-[300px] h-[220px] bg-gradient-to-tr from-yellow-500 to-yellow-200 rounded-[12px] transition-all duration-[0.5s] group-hover:top-[-100px] group-hover:scale-75 flex justify-center items-center">
+            <i class="fa-brands fa-js text-white text-9xl"></i>
+          </div>
+          <div class="content1 absolute w-[100%] py-0 px-[30px] text-center h-[35px] overflow-hidden top-[252px] group-hover:top-[130px] group-hover:h-[250px] transition-all duration-[0.5s]">
+            <h2 class="text-yellow-300 text-4xl text-[700]">JAVASCRIPT</h2>
+            <p class="text-sm op  acity-0 group-hover:opacity-100 transition-all duration-50">Javascript in my main language that I use to compliment HTML when coding the backend part of my website. It is built with various function that can increase its functionality as well as compliment the CSS.</p>
+          </div>
+        </div>
+        <div class="card group lg:col-span-1 max-lg:col-span-3 relative max-md:w-[300px] md:w-[350px] h-[300px] bg-neutral-100 dark:bg-neutral-900 rounded-[20px] hover:h-[350px] transition-all duration-[0.5s] flex justify-center items-start">
+          <div class="imgBx absolute top-[20px] max-md:w-[250px] md:w-[300px] h-[220px] bg-gradient-to-bl from-blue-500 to-blue-300 rounded-[12px] transition-all duration-[0.5s] group-hover:top-[-100px] group-hover:scale-75 flex justify-center items-center">
+            <i class="ri-flutter-fill text-white text-9xl"></i>
+          </div>
+          <div class="content1 absolute w-[100%] py-0 px-[30px] text-center h-[35px] overflow-hidden top-[252px] group-hover:top-[130px] group-hover:h-[250px] transition-all duration-[0.5s]">
+            <h2 class="text-blue-400 text-4xl text-[700]">FLUTTER</h2>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-all duration-50">Flutter is the only language that I use to code my apps. Unlike the websites, the frontend and the backend of the application can be coded using this user-friendly language. A truly good language for beginners.</p>
+          </div>
+        </div>
+        <div class="card group lg:col-span-1 max-lg:col-span-3 relative max-md:w-[300px] md:w-[350px] h-[300px] bg-neutral-100 dark:bg-neutral-900 rounded-[20px] hover:h-[350px] transition-all duration-[0.5s] flex justify-center items-start">
+          <div class="imgBx absolute top-[20px] max-md:w-[250px] md:w-[300px] h-[220px] bg-gradient-to-b from-green-500 to-green-300 rounded-[12px] transition-all duration-[0.5s] group-hover:top-[-100px] group-hover:scale-75 flex justify-center items-center">
+            <i class="fa-brands fa-python text-white text-9xl"></i>
+          </div>
+          <div class="content1 absolute w-[100%] py-0 px-[30px] text-center h-[35px] overflow-hidden top-[252px] group-hover:top-[130px] group-hover:h-[250px] transition-all duration-[0.5s]">
+            <h2 class="text-green-400 text-4xl text-[700]">PYTHON</h2>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-all duration-50">Python is the language that I use when making real problem-solving solutions with the help of Raspberry Pi. With its easily understandable language, it is very easy to get started with this coding language.</p>
+          </div>
+        </div>
+        <div class="card group lg:col-span-1 max-lg:col-span-3 relative max-md:w-[300px] md:w-[350px] h-[300px] bg-neutral-100 dark:bg-neutral-900 rounded-[20px] hover:h-[350px] transition-all duration-[0.5s] flex justify-center items-start">
+          <div class="imgBx absolute top-[20px] max-md:w-[250px] md:w-[300px] h-[220px] bg-gradient-to-br from-purple-500 to-purple-300 rounded-[12px] transition-all duration-[0.5s] group-hover:top-[-100px] group-hover:scale-75 flex justify-center items-center">
+            <i class="fa-brands fa-php text-white text-9xl"></i>
+          </div>
+          <div class="content1 absolute w-[100%] py-0 px-[30px] text-center h-[35px] overflow-hidden top-[252px] group-hover:top-[130px] group-hover:h-[250px] transition-all duration-[0.5s]">
+            <h2 class="text-purple-400 text-4xl text-[700]">PHP</h2>
+            <p class="text-sm opacity-0 group-hover:opacity-100 transition-all duration-50">PHP is considered a modified HTML since it has the same markup as HTML but with extra built-in database functions that can easily help with connecting to databases and making forms or data tables.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      </section>
+      <section class="min-h-[100vh] flex flex-col w-[100%] justify-center items-center text-3xl font-bold" id="education">
+        <span>
+          <div class="left-0 name relative flex justify-center items-center text-center py-10">
+            <div class="absolute h-[15px] max-lg:w-[100%] lg:w-[600px] xl:w-[730px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-2xl ">
+            </div>
+            <h1 class="md:text-7xl max-md:text-5xl relative bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text">
+              EDUCATION PATHWAY
+            </h1>
+            </div>
+      </span>
+        <div class="timeline relative max-w-[1200px] my-[100px] mx-auto after:content-[''] after:absolute after:w-[6px] after:h-[100%] after:bg-gradient-to-b after:from-red-500 after:to-orange-500 after:top-0 after:left-[50%] after:ml-[-6px] after:z-[-1] after:rounded-lg max-md:my-50px max-md:mx-auto max-md:after:left-[39px]">
+          <div class="time-container left-container left-0 py-[10px] px-[50px] relative w-[50%] max-md:w-[100%] max-md:pl-[80px] max-md:pr-[25px]">
+            <div class="icon max-md:left-[5px] absolute w-[60px] h-[60px] rounded-[30px] right-[-28px] top-[32px] z-10 dark:bg-neutral-900 bg-neutral-300 flex justify-center items-center">
+              <img src="src/assets/chrisdale.png" class="rounded-[50%]" alt="">
+            </div>
+            <div class="text-box max-md:text-[13px] py-[20px] px-[30px] dark:bg-neutral-900 bg-neutral-300 relative rounded-[6px] leading-normal">
+              <h2 class="text-[600] text-2xl leading-none">Chrisdale (Kindergarten)</h2>
+              <small class='inline-block text-[15px] mb-[15px] max-md:mb-[10px]'>2012 - 2014</small>
+              <p class="text-sm">I went to a Chinese kindergarten which is why I'm a bit good with Mandarin. I was left since I was the only Indian there but luckily my headmaster was an Indian so she allowed me to skip my Mandarin exams and give me full marks :)</p>
+              <span class="left-container-arrow h-0 w-0 absolute top-[28px] z-[1] border-t-[15px] border-b-[15px] border-t-transparent border-b-transparent border-l-[15px] dark:border-l-neutral-900 border-l-neutral-300 right-[-15px] max-md:border-r-[15px] max-md:dark:border-r-neutral-900 max-md:border-r-neutral-300 max-md:border-l-0 max-md:left-[-14px]"></span>
+            </div>
+          </div>
+          <div class="time-container right-container max-md:left-0 left-[50%] py-[10px] px-[50px] relative w-[50%] max-md:w-[100%] max-md:pl-[80px] max-md:pr-[25px]">
+            <div class="icon max-md:left-[5px] absolute w-[60px] h-[60px] rounded-[30px] left-[-34px] top-[32px] z-10 dark:bg-neutral-900 bg-neutral-300 flex justify-center items-center">
+              <img src="src/assets/vive.jpg" class="rounded-[50%] bg-center" alt="">
+            </div>
+            <div class="text-box max-md:text-[13px] py-[20px] px-[30px] dark:bg-neutral-900 bg-neutral-300 relative rounded-[6px] leading-normal">
+              <h2 class="text-[600] text-2xl leading-none">SJK(T) Vivekananda (Primary School)</h2>
+              <small class="inline-block text-[15px] mb-[15px] max-md:mb-[10px]">2015 - 2020</small>
+              <p class="text-sm">During my primary school, all I got was 90 and above from Standard 1 till Standard 3, but during Standard 4 to Standard 6 it dropped to 80 and above. I was the head prefect in my school and considered one of the role models for others.</p>
+              <span class="right-container-arrow h-0 w-0 absolute top-[28px] z-[1] border-t-[15px] border-b-[15px] border-t-transparent border-b-transparent border-r-[15px] dark:border-r-neutral-900 border-r-neutral-300 left-[-14px] max-md:border-r-[15px] max-md:dark:border-r-neutral-900 max-md:border-r-neutral-300 max-md:border-l-0 max-md:left-[-14px]"></span>
+            </div>
+          </div>
+          <div class="time-container left-container left-0 py-[10px] px-[50px] relative w-[50%] max-md:w-[100%] max-md:pl-[80px] max-md:pr-[25px]">
+            <div class="icon max-md:left-[5px] absolute w-[60px] h-[60px] rounded-[30px] right-[-28px] top-[32px] z-10 dark:bg-neutral-900 bg-neutral-300 flex justify-center items-center">
+              <img src="src/assets/genius.jpg" class="rounded-[50%] bg-center" alt="">
+            </div>
+            <div class="text-box max-md:text-[13px] py-[20px] px-[30px] dark:bg-neutral-900 bg-neutral-300 relative rounded-[6px] leading-normal">
+              <h2 class="text-[600] text-2xl leading-none">Kolej Permata Pintar Negara (Secondary School)</h2>
+              <small class="inline-block text-[15px] mb-[15px] max-md:mb-[10px]">2021 - now</small>
+              <p class="text-sm">I entered a special high school where we get to learn all Form 4 subjects from the age of 13. My studies have ben pretty good since it mostly consists of A+'s and A's but I still try to work hard every day to get a 4.0GPA :P</p>
+              <span class="left-container-arrow h-0 w-0 absolute top-[28px] z-[1] border-t-[15px] border-b-[15px] border-t-transparent border-b-transparent border-l-[15px] dark:border-l-neutral-900 border-l-neutral-300 right-[-15px] max-md:border-r-[15px] max-md:dark:border-r-neutral-900 max-md:border-r-neutral-300 max-md:border-l-0 max-md:left-[-14px]"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="min-h-[100vh] flex flex-col justify-center items-center text-3xl font-bold" id="achievements">
+        <span>
+          <div class="left-0 name relative flex justify-center items-center text-center py-10">
+            <div class="absolute h-[15px] max-lg:w-[100%] lg:w-[600px] xl:w-[730px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-2xl ">
+            </div>
+            <h1 class="md:text-7xl max-md:text-4xl relative bg-gradient-to-r from-orange-500 to-red-500 inline-block text-transparent bg-clip-text">
+              MY ACHIEVEMENTS
+            </h1>
+            </div>
+      </span>
+      <div class="achieve max-lg:pl-[25px] gap-x-0">
+        <div class="card__container">
+          <article class="card__article">
+            <img src="src/assets/21.png" alt="image" class="card__img bg-left">
+
+            <div class="card__data text-center bg-neutral-300 dark:bg-neutral-900">
+               <span class="card__description text-[15px] text-stone-500">Silver</span>
+               <h2 class="card__title text-[16px]">Young Innovators Challenge</h2>
+            </div>
+         </article>
+         <article class="card__article">
+          <img src="src/assets/22.png" alt="image" class="card__img">
+
+          <div class="card__data text-center bg-neutral-300 dark:bg-neutral-900">
+             <span class="card__description text-[15px] text-green-500">Pass</span>
+             <h2 class="card__title text-[20px]">PCEP Certification</h2>
+          </div>
+       </article>
+
+           <article class="card__article">
+              <img src="/src/assets/23.png" alt="image" class="card__img">
+
+              <div class="card__data text-center bg-neutral-300 dark:bg-neutral-900">
+                 <span class="card__description text-[15px] text-yellow-700">Gold</span>
+                 <h2 class="card__title text-[20px]">BootCamp 2023</h2>
+              </div>
+           </article>
+        </div>
+     </div>
+      </section>
+    </main>
+    <footer class="flex flex-col h-[200px] justify-center items-center dark:bg-neutral-900 bg-neutral-300">
+      <p>&copy; 2024, Logan Kannan</p>
+      <br>
+      <br>
+      <p>Contact Me</p>
+      <br>
+      <div class="grid grid-cols-3 gap-x-8">
+        <a href="https://www.youtube.com/channel/UCNWJ7MLO81A7tQLFG2OsM8Q"><i class="fa-brands fa-youtube text-3xl hover:text-red-700 "></i></a>
+        <a href="https://www.instagram.com/logan_kannan842008/"><i class="fa-brands fa-instagram text-3xl bg-gradient-to-br dark:from-neutral-300 via-neutral-900 dark:via-neutral-300 dark:to-neutral-300 from-neutral-900 to-neutral-900 text-transparent bg-clip-text hover:from-purple-700 hover:to-yellow-500 hover:via-orange-600"></i></a>
+        <a href="https://twitter.com/logan_kannan"><i class="fa-brands fa-x-twitter text-3xl hover:text-blue-500 "></i></a>
+      </div>
+    </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="src/script.js"></script>
+  </body>
+</html>
